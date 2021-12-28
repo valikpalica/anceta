@@ -1,7 +1,5 @@
 const sequelize = require('../sequlize');
 const Sequelize = require('sequelize');
-const AssessmenetComanderTest = require('./AssessmentComanderTest');
-const User = require('./User');
 
 const ComanderAnceta  = sequelize.define('ComanderAnceta',{
     id_comander_anceta:{
@@ -41,9 +39,13 @@ const ComanderAnceta  = sequelize.define('ComanderAnceta',{
     mainOpinion:{
         type: Sequelize.STRING,
         allowNull:false
+    },
+    vidpovidnist:{
+        type:Sequelize.STRING,
+        allowNull:false,
     }
 });
 
-ComanderAnceta.hasMany(AssessmenetComanderTest,{foreignKey:'anceta_comander_id',onDelete: "cascade" });
+
 
 module.exports = ComanderAnceta;

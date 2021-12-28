@@ -15,6 +15,6 @@ const Quastion = sequelize.define('Quastion',{
     }
 });
 
-Quastion.hasMany(AssessmentQuastion,{foreignKey:'quastion_id',onDelete:'cascade'});
+
 
 module.exports = Quastion;

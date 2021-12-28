@@ -1,7 +1,5 @@
 const sequelize = require('../sequlize');
 const Sequelize = require('sequelize');
-const ComanderAnceta = require('./AncetaComander');
-const Anceta = require('./Anceta');
 
 const User = sequelize.define('User',{
     id_user:{
@@ -34,7 +32,7 @@ const User = sequelize.define('User',{
         type:Sequelize.STRING,
         allowNull:false,
     },
-    graaduation:{
+    graduation:{
         type:Sequelize.STRING,
         allowNull:false,
     },
@@ -49,13 +47,8 @@ const User = sequelize.define('User',{
     specialize:{
         type:Sequelize.STRING,
         allowNull:false,
-    },
-    vidpovidnist:{
-        type:Sequelize.STRING,
-        allowNull:false,
     }
 });
 
-User.belongsTo(ComanderAnceta,{foreignKey:'user_id',onDelete:'cascade'});
-User.hasMany(Anceta,{foreignKey:'user_id',onDelete:'cascade'});
+
 module.exports = User;

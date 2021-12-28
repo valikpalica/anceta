@@ -1,7 +1,6 @@
 const sequelize = require('../sequlize');
 const Sequelize = require('sequelize');
-const AssessmentCompetence = require('./AssessmentCompetence');
-const AssessmnetQuaston = require('./AssessmentQuastion');
+
 
 const Anceta = sequelize.define('anceta',{
     id_anceta:{
@@ -32,7 +31,6 @@ const Anceta = sequelize.define('anceta',{
     }
 });
 
-Anceta.hasMany(AssessmentCompetence,{foreignKey:'anceta_id',onDelete:'cascade'});
-Anceta.hasMany(AssessmnetQuaston,{foreignKey:'anceta_id',onDelete:'cascade'});
+
 
 module.exports = Anceta;

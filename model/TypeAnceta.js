@@ -18,9 +18,6 @@ const TypeAnceta = sequelize.define('TypeAnceta',{
     }
 })
 
-TypeAnceta.hasMany(Anceta,{foreignKey:'type_anceta_id',onDelete:'cascade'});
-TypeAnceta.hasMany(Quastion,{foreignKey:'type_anceta_id',onDelete:'cascade'});
-TypeAnceta.hasMany(Competence,{foreignKey:'type_anceta_id',onDelete:'cascade'});
 
 
 module.exports = TypeAnceta

@@ -14,6 +14,6 @@ const Competence = sequelize.define('Competence',{
     }
 });
 
-Competence.hasMany(AssessmentCompetence,{foreignKey:'competence_id',onDelete:'cascade'});
+
 
 module.exports = Competence;

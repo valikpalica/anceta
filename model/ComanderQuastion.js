@@ -19,6 +19,6 @@ const ComanderQuastion = sequelize.define('ComanderQuastion',{
     }
 });
 
-ComanderQuastion.hasMany(AssessmenetComanderTest,{foreignKey:'comander_quastion_id',onDelete: "cascade" });
+
 
 module.exports = ComanderQuastion;
