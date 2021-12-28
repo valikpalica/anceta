@@ -1,0 +1,7 @@
+{
+    "host":"localhost",
+    "user":"root",
+    "password":"1111",
+    "dialect":"mysql",
+    "db_name":"type_anceta"
+}
