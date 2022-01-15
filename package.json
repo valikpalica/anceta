@@ -5,13 +5,16 @@
   "main": "AncetaApp.js",
   "scripts": {
     "start": "node AncetaApp.js",
-    "dev":"nodemon AncetaApp.js"
+    "dev": "nodemon AncetaApp.js",
+    "pm2": "pm2 start AncetaApp.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
     "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "pm2": "^5.1.2",
     "sequelize": "^7.0.0-alpha.2"
   }
 }

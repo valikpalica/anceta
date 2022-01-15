@@ -11,7 +11,7 @@ process.on('SIGTERM',()=>{
 })
 try {
     app.use(express.json());
-    app.use('/',Router);
+    app.use('/type_anceta',Router);
     app.listen(PORT, async ()=>{
         console.log(`servis Anceta started on port: ${PORT}`);
         await syncDB();
