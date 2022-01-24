@@ -10,4 +10,4 @@ COPY . ./
 
 EXPOSE 8001
 
-CMD ["npm","run","pm2"]
+CMD ["npm","start"]
